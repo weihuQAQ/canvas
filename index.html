@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 100vh;
+      }
+      .container {
+        position: relative;
+        width: 800px;
+        height: 27.34375vw;
+        border: 1px solid red;
+      }
+
+      img {
+        border: 1px dashed black;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .canvas-container {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        border: 1px dashed pink;
+        transform: translateY(-50%) scale(1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="" alt="" />
+      <div class="canvas-container">
+        <canvas></canvas>
+      </div>
+    </div>
+
+    <div>
+      <select class="skus"></select>
+      <br />
+      <label>
+        <span>side</span>
+        <input type="checkbox" value="false" />
+      </label>
+    </div>
+
+    <script src="./src/index.ts" type="module"></script>
+  </body>
+</html>
